@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+<<<<<<< HEAD
+=======
+  
+>>>>>>> cc9a4da7bd952aa8ca82b9f0ab2f282f70caa56a
   # GET /articles
   # GET /articles.json
   def index
@@ -14,8 +18,12 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
+<<<<<<< HEAD
     #current_user.articles.build
     @article = current_user.articles.build
+=======
+      @article = current_user.articles.build
+>>>>>>> cc9a4da7bd952aa8ca82b9f0ab2f282f70caa56a
   end
 
   # GET /articles/1/edit
@@ -25,7 +33,11 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
+<<<<<<< HEAD
     @article = current_user.articles.build(article_params)
+=======
+      @article = current_user.articles.build(article_params)
+>>>>>>> cc9a4da7bd952aa8ca82b9f0ab2f282f70caa56a
 
     respond_to do |format|
       if @article.save
